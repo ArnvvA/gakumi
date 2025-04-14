@@ -1,0 +1,147 @@
+@font-face {
+    font-family: "Dogica"; /* Name you will use in your CSS */
+    src: url("assets/dogica.ttf") format("truetype"); /* Correct path to the font */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "Dogica", sans-serif;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    -webkit-app-region: drag;
+}
+
+.player-container {
+    background-color: rgba(209, 179, 255, 0.9);;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 86%;
+    max-width: 400px;
+    height: 86%;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.album-cover img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.song-info p {
+    font-size: 16px;
+    color: #fbf5ef;
+    text-shadow: 2px 2px 2px rgba(139, 109, 156, 0.6);
+}
+/* 
+#progress-bar {
+    width: 100%;
+    margin: 10px 0;
+} */
+
+#progress-bar {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px; /* Height of the track */
+    background: #8b6d9c;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+#progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -webkit-app-region: no-drag;
+    appearance: none;
+    background: url('assets/slider-thumb.png') no-repeat center;
+    background-size: contain;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    border: none;
+    margin-top: -0px; /* Helps vertically center it on the track */
+}
+
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+    margin-top: -10px;
+    /* width: 80%;
+    margin: 10px auto; */
+}
+
+button {
+    background: none;
+    border: none;
+    padding: none;
+    cursor: pointer;
+    
+    outline: none;
+
+}
+
+
+button:active {
+    transform: scale(0.90);
+}
+
+button:focus {
+    outline: none;
+}
+
+#play-pause {
+    background-image: url("assets/play.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+}
+
+#next {
+    background-image: url("assets/next.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: transparent;
+    width: 52px;
+    height: 52px;
+}
+  
+#prev {
+    background-image: url("assets/prev.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: transparent;
+    width: 52px;
+    height: 52px;
+}
+  
+
+button, input {
+    -webkit-app-region: no-drag;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}

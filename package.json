@@ -1,0 +1,23 @@
+{
+  "name": "bgmnd",
+  "version": "1.0.0",
+  "description": "music player desktop app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArnvvA/BGMnD.git"
+  },
+  "author": "arnvv",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArnvvA/BGMnD/issues"
+  },
+  "homepage": "https://github.com/ArnvvA/BGMnD#readme",
+  "devDependencies": {
+    "electron": "^35.0.3"
+  }
+}
