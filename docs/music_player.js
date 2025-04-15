@@ -3,7 +3,18 @@ document.addEventListener("DOMContentLoaded", function() {
     const songs = [
         { title: "Her's - Harvey", file: "songs/Her's - Harvey.mp3", image: "images/harvey.jfif" },
         { title: "The Look - Metronomy", file: "songs/Metronomy - The Look.mp3", image: "images/the_look.jfif" },
-        { title: "Lovers Rock - TV Girl", file: "songs/Lovers Rock - TV Girl.mp3", image: "images/lovers_rock.jfif" }
+        { title: "Lovers Rock - TV Girl", file: "songs/Lovers Rock - TV Girl.mp3", image: "images/lovers_rock.jfif" },
+        { title: "Like Real People Do - Hozier", file: "songs/Hozier - Like Real People Do.mp3", image: "images/like_real_people_do.jfif"},
+        { title: "seeing your name makes me happy - burbank", file: "songs/burbank - seeing your name makes me happy.mp3", image: "images/"},
+        { title: "dream a little dream of me", file: "songs/Dream A Little Dream of Me.mp3", image: "images/"},
+        { title: "Jigsaw Falling Into Place - Radiohead", file: "songs/Jigsaw Falling Into Place - Radiohead.mp3", image: "images/"},
+        { title: "kirari futari - Mamerico", file: "songs/kirari futari.mp3", image: "images/"},
+        { title: "Kiss Me - Sixpence None The Richer", file: "songs/Kiss Me.mp3", image: "images/"},
+        { title: "Kouya wo Aruke", file: "songs/Kouyao Aruke.mp3", image: "images/"},
+        { title: "Ma Meilleure Ennemie - Stomme - Stromae", file: "songs/Ma Meilleure Ennemie.mp3", image: "images/"},
+        { title: "No. 1 Party Anthem - Arctic Monkeys", file: "songs/No. 1 Party Anthem.mp3", image: "images/"},
+        { title: "", file: "songs/.mp3", image: "images/"},
+        { title: "", file: "songs/.mp3", image: "images/"},
     ];
 
 
