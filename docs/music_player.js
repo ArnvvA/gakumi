@@ -96,4 +96,20 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     updatePlayer(); // Initialize player with first song
+
+    // Build the tracklist dynamically
+    let tracklist = document.getElementById("tracklist");
+
+    songs.forEach((song, index) => {
+        let listItem = document.createElement("li");
+        listItem.textContent = song.title;
+        listItem.addEventListener("click", () => {
+            currentSongIndex = index;
+            updatePlayer();
+            audioPlayer.play();
+            playPauseButton.style.backgroundImage = "url('assets/pause.png')";
+        });
+        tracklist.appendChild(listItem);
+    });
+
 });
