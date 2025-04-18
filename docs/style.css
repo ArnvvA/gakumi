@@ -8,16 +8,15 @@
 body {
     font-family: "Dogica", sans-serif;
     /* background-color: transparent; */
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     align-items: center;
     height: 100vh;
     /*-webkit-app-region: drag; */
     background: url("images/autumn.png") no-repeat center center fixed;
     background-size: cover;
-    
-}
 
+}
 
 .player-container {
     background-color: rgba(209, 179, 255, 0);;
@@ -154,23 +153,28 @@ html, body {
 
 .player-wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: rows;
     justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
-    padding: 20px;
+    align-items: center;
+    height: 100vh;
+    gap: 50px;
+    /* padding: 20px; */
 }
 
 .tracklist-container {
-    background: rgba(255, 255, 255, 0);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
     padding: 15px;
-    border-radius: 12px;
+    border-radius: 22px;
     color: #fff;
-    width: 400px;
+    width: 340px;
     max-height: 100vh;
     overflow-y: auto;
     font-size: 14px;
     text-shadow: 2px 2px 2px rgba(139, 109, 156, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .tracklist-container h3 {
@@ -194,4 +198,21 @@ html, body {
 
 #tracklist li:hover {
     background: rgba(255, 255, 255, 0.2);
+    font-size: 16px;
 }
+
+.maybe-artwork {
+    width: 400px;
+}
+
+#background-video {
+    position: fixed;    /* LOCK it to the screen */
+    top: 0;
+    left: 0;
+    width: 100vw;       /* Full width of the viewport */
+    height: 100vh;      /* Full height of the viewport */
+    object-fit: cover;  /* Stretches without messing up aspect ratio */
+    z-index: -1;        /* Send it behind everything */
+    pointer-events: none; /* So clicks go through the video */
+  }
+  
