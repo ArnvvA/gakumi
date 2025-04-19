@@ -77,6 +77,8 @@ document.addEventListener("DOMContentLoaded", function() {
             const progress = (audioPlayer.currentTime / audioPlayer.duration) * 100;
             progressBar.value = progress;
             // valueDisplay.textContent = `Value: ${Math.floor(progress * 100)}%`;
+
+            // progressBar.style.background = `linear-gradient(to right, #8b6d9c ${progress}%, #272744 ${progress}%)`;
         }
     });
 

@@ -56,7 +56,7 @@ body {
     appearance: none;
     width: 100%;
     height: 6px; /* Height of the track */
-    background: #8b6d9c;
+    background: #272744;
     border-radius: 3px;
     outline: none;
     cursor: pointer;
@@ -74,6 +74,8 @@ body {
     cursor: pointer;
     border: none;
     margin-top: -0px; /* Helps vertically center it on the track */
+    /* margin-left: -6px;
+    margin-right: 6px; */
 }
 
 
@@ -203,7 +205,13 @@ html, body {
 
 .maybe-artwork {
     width: 400px;
+    font-size: 32px;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(139, 109, 156, 1);
+    text-align: right;
+    line-height: 1.8;
 }
+
 
 #background-video {
     position: fixed;    /* LOCK it to the screen */
@@ -216,3 +224,4 @@ html, body {
     pointer-events: none; /* So clicks go through the video */
   }
   
+
