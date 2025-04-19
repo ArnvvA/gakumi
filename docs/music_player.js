@@ -98,7 +98,10 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     updatePlayer(); // Initialize player with first song
-
+    setTimeout(() => {
+        audioPlayer.play();
+        playPauseButton.style.backgroundImage = "url('assets/pause.png')";
+    }, 3000); // ⏳ 3000 milliseconds = 3 seconds
     // Build the tracklist dynamically
     let tracklist = document.getElementById("tracklist");
 
