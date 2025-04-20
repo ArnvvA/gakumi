@@ -17,8 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         { title: "踊り子 - Vaundy", file: "songs/踊り子.mp3", image: "images/odoriko.jfif"},
         { title: "Lovers Rock - TV Girl", file: "songs/Lovers Rock - TV Girl.mp3", image: "images/lovers_rock.jfif" },
         { title: "Sukiyaki - Kyu Sakamoto", file: "songs/Sukiyaki.mp3", image: "images/from_up_the_poppy_hill.jfif"},
-        { title: "Kouya wo Aruke - ASIAN KUNGFU GENERATION", file: "songs/Kouyao Aruke.mp3", image: "images/kouya_wo_aruke.jfif"},
-        { title: "in your arms - saib.", file: "songs/saib. - in your arms..mp3", image: "images/seeing_your_name.jfif"}
+        { title: "Kouya wo Aruke - ASIAN KUNGFU GENERATION", file: "songs/Kouyao Aruke.mp3", image: "images/kouya_wo_aruke.jfif"}
     ];
 
 
